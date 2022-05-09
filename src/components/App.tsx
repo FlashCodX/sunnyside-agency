@@ -24,6 +24,7 @@ function App() {
     container,
     socials,
     bannerCard,
+    cardContent,
     headerBackground,
     headerArrowImage,
     cardsContainer,
@@ -48,23 +49,25 @@ function App() {
       </div>
       <div className={cardsContainer}>
         <div className={card}>
-          <h1>Transfor yout brand</h1>
+          <div className={cardContent}>
+          <h1>Transfor your brand</h1>
           <p>
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
           <a href="/">Learn More</a>
+          </div>
+        
         </div>
 
-        {/* <div className={card}>
+        <div className={card}>
           <img src={egg} alt="egg" />
         </div>
 
         <div className={card}>
           <img src={lamp} alt="lamp" />
         </div>
-
         <div className={card}>
           <h1>Stand out to the right audience</h1>
           <p>
@@ -102,7 +105,7 @@ function App() {
             extend your brand in digital places.
           </p>
           <img src={lamp} alt="lamp" />
-        </div> */}
+        </div>
       </div>
 
       {/* <div className={testimonials}>

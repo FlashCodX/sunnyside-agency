@@ -38,13 +38,49 @@
 
 
 .cardsContainer{
+    width: 100%;
+    background: rebeccapurple;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
+.cardsContainer >*:nth-child(2){
+    background: #fed701;
+}
+
+
 .card {
     position: relative;
+    min-height: 400px;
+   display: flex;
+   justify-content: end;
+}
+
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 30px;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.cardContent > h1 {
+    font-size: 2.5rem !important;
+    max-width: 300px;
+}
+
+.cardContent > p {
+color: gray !important;
+font-weight: lighter;
+}
+
+
+.card:first-child{
+    background: white !important;
 }
 
 .card > img{
+    width: 100%;
 }
