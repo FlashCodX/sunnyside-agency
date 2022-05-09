@@ -12,6 +12,12 @@ import egg from "../assets/desktop/image-transform.jpg";
 import lamp from "../assets/desktop/image-stand-out.jpg";
 import milk from "../assets/desktop/image-gallery-milkbottles.jpg";
 
+
+import graphic_design from "../assets/desktop/image-graphic-design.jpg";
+import photography from "../assets/desktop/image-photography.jpg";
+
+
+
 import emily from "../assets/image-emily.jpg";
 import thomas from "../assets/image-emily.jpg";
 import jennie from "../assets/image-emily.jpg";
@@ -30,6 +36,7 @@ function App() {
     cardsContainer,
     card,
     cardAM,
+    backgroundContainer,
     testimonials,
     testimonial,
     author,
@@ -50,7 +57,7 @@ function App() {
       <div className={cardsContainer}>
         <div className={card}>
           <div className={cardContent}>
-          <h1>Transfor your brand</h1>
+          <h1>Transfor your <br /> brand</h1>
           <p>
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
@@ -58,7 +65,6 @@ function App() {
           </p>
           <a href="/">Learn More</a>
           </div>
-        
         </div>
 
         <div className={card}>
@@ -69,6 +75,20 @@ function App() {
           <img src={lamp} alt="lamp" />
         </div>
         <div className={card}>
+        <div className={cardContent}>
+        <h1>Stand out to the right <br /> audience</h1>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="/">Learn More</a>
+          </div>
+         
+        </div>
+
+        <div className={cardAM}>
+          <div className={cardContent}>
           <h1>Stand out to the right audience</h1>
           <p>
             Using a collaborative formula of designers, researchers,
@@ -76,36 +96,28 @@ function App() {
             extend your brand in digital places.
           </p>
           <a href="/">Learn More</a>
+          </div>
+         <div className={backgroundContainer}>
+         <img src={graphic_design} alt="lamp" />
+         </div>
+
         </div>
 
         <div className={cardAM}>
+          <div className={cardContent}>
           <h1>Stand out to the right audience</h1>
           <p>
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="/">Learn More</a>
-        </div>
+          </div>
+          <div className={backgroundContainer}>
+          <img src={photography} alt="lamp" />
 
-        <div className={cardAM}>
-          <h1>Stand out to the right audience</h1>
-          <p>
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll build and
-            extend your brand in digital places.
-          </p>
-          <img src={lamp} alt="lamp" />
+          </div>
         </div>
-        <div className={cardAM}>
-          <h1>Stand out to the right audience</h1>
-          <p>
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll build and
-            extend your brand in digital places.
-          </p>
-          <img src={lamp} alt="lamp" />
-        </div>
+    
       </div>
 
       {/* <div className={testimonials}>

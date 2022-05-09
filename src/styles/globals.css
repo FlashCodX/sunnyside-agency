@@ -18,12 +18,13 @@
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 *{
+  color: black ;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

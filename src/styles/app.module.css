@@ -9,13 +9,13 @@
     position: relative !important;
     width: 100%;
     background: #3fbeff;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
 }
 
 .bannerCard > h1{
-    margin-top:7rem;
+    margin-top:10rem;
     z-index: 1;
     color: white;
     font-family: 'Fraunces';
@@ -33,54 +33,66 @@
 
 .headerArrowImage{
     position: absolute;
-    top: 200px;
+    top: 300px;
 }
-
 
 .cardsContainer{
     width: 100%;
-    background: rebeccapurple;
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2,1fr);
 }
 
-.cardsContainer >*:nth-child(2){
-    background: #fed701;
-}
-
-
 .card {
     position: relative;
-    min-height: 400px;
    display: flex;
    justify-content: end;
 }
 
+.card img{
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
 
-.cardContent{
+.card > .cardContent{
     display: flex;
     flex-direction: column;
+    color: white;
     margin: auto;
     gap: 30px;
     justify-content: center;
-    max-width: 400px;
+    max-width: 450px;
 }
-
-.cardContent > h1 {
+.card > .cardContent > h1 {
     font-size: 2.5rem !important;
-    max-width: 300px;
-}
-
-.cardContent > p {
-color: gray !important;
-font-weight: lighter;
 }
 
 
-.card:first-child{
-    background: white !important;
+
+.cardAM{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.card > img{
+
+.backgroundContainer{
+    position: absolute;
+    width: 100%;
+}
+
+.cardAM > .cardContent{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.backgroundContainer > img{
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    z-index: -1;
     width: 100%;
 }
