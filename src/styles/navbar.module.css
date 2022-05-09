@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Fraunces';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.container > p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navItems{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1rem;
+}
+
+.navItems > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.navItems > a:last-child{
+    color: black;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px ;
+    border-radius: 25px;
+}
+
+.navItems > a:last-child:hover{
+    background: var(--dark-moderate-cyan);
+    color: white;
+}

@@ -1,18 +1,31 @@
 import { AiOutlineInstagram } from "react-icons/ai";
-import styles from "./styles/app.module.css";
+import styles from "../styles/app.module.css";
 
-import gallery_milk from "../assets/desktop/image-gallery-milkbottles.jpg";
-import gallery_orange from "../assets/desktop/image-gallery-orange.jpg";
-import gallery_cone from "../assets/desktop/image-gallery-cone.jpg";
-import gallery_sugarcubes from "../assets/desktop/image-gallery-suggarcubes.jpg";
+import headerImage from "../assets/desktop/image-header.jpg";
+
+import orange from "../assets/desktop/image-gallery-orange.jpg";
+import cone from "../assets/desktop/image-gallery-cone.jpg";
+import sugarcubes from "../assets/desktop/image-gallery-sugarcubes.jpg";
+
+
+import egg from "../assets/desktop/image-transform.jpg";
+import lamp from "../assets/desktop/image-stand-out.jpg";
 import milk from "../assets/desktop/image-gallery-milkbottles.jpg";
-import milk from "../assets/desktop/image-gallery-milkbottles.jpg";
+
+import emily from "../assets/image-emily.jpg";
+import thomas from "../assets/image-emily.jpg";
+import jennie from "../assets/image-emily.jpg";
+import Navbar from "./Navbar";
+
+const arrow = require('../assets/icon-arrow-down.svg').default;
 
 function App() {
   const {
     container,
     socials,
     bannerCard,
+    headerBackground,
+    headerArrowImage,
     cardsContainer,
     card,
     cardAM,
@@ -24,10 +37,14 @@ function App() {
     links,
   } = styles;
   return (
-    <main className={container}>
+    <>
+      <Navbar/>
+
+      <main className={container}>
       <div className={bannerCard}>
+        <img src={headerImage} className={headerBackground} alt="orange" />
+        <img src={arrow} className={headerArrowImage} alt="arrow" />
         <h1>We are Creatives</h1>
-        <img src={orange} alt="orange" />
       </div>
       <div className={cardsContainer}>
         <div className={card}>
@@ -40,7 +57,7 @@ function App() {
           <a href="/">Learn More</a>
         </div>
 
-        <div className={card}>
+        {/* <div className={card}>
           <img src={egg} alt="egg" />
         </div>
 
@@ -85,13 +102,13 @@ function App() {
             extend your brand in digital places.
           </p>
           <img src={lamp} alt="lamp" />
-        </div>
+        </div> */}
       </div>
 
-      <div className={testimonials}>
+      {/* <div className={testimonials}>
         <h1>Client Testimonials</h1>
         <div className={testimonial}>
-          <img src={user} alt="userImage" />
+          <img src={emily} alt="userImage" />
           <p></p>
           <div className={author}>
             <h1></h1>
@@ -100,7 +117,7 @@ function App() {
         </div>
 
         <div className={testimonial}>
-          <img src={user} alt="userImage" />
+          <img src={thomas} alt="userImage" />
           <p></p>
           <div className={author}>
             <h1></h1>
@@ -109,7 +126,7 @@ function App() {
         </div>
 
         <div className={testimonial}>
-          <img src={user} alt="userImage" />
+          <img src={jennie} alt="userImage" />
           <p></p>
           <div className={author}>
             <h1></h1>
@@ -119,10 +136,10 @@ function App() {
       </div>
 
       <div className={galery}>
-        <img src={} alt="galeryPhoto" />
-        <img src={} alt="galeryPhoto" />
-        <img src={} alt="galeryPhoto" />
-        <img src={} alt="galeryPhoto" />
+        <img src={milk} alt="galeryPhoto" />
+        <img src={orange} alt="galeryPhoto" />
+        <img src={cone} alt="galeryPhoto" />
+        <img src={sugarcubes} alt="galeryPhoto" />
       </div>
 
       <div className={footerContent}>
@@ -138,9 +155,11 @@ function App() {
           <AiOutlineInstagram />
           <AiOutlineInstagram />
           <AiOutlineInstagram />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </main>
+    </>
+   
   );
 }
 

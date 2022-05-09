@@ -1,0 +1,50 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerCard{
+    position: relative !important;
+    width: 100%;
+    background: #3fbeff;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerCard > h1{
+    margin-top:7rem;
+    z-index: 1;
+    color: white;
+    font-family: 'Fraunces';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.headerBackground{
+    position: absolute;
+    object-fit: contain;
+    object-position: bottom;
+    max-width: 1000px;
+    height: inherit;
+}
+
+.headerArrowImage{
+    position: absolute;
+    top: 200px;
+}
+
+
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card {
+    position: relative;
+}
+
+.card > img{
+}
