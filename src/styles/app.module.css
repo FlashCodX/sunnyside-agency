@@ -73,14 +73,17 @@
 .cardAM{
     position: relative;
     display: flex;
+    min-height: 500px;
     align-items: center;
     flex-direction: column;
 }
 
 
 .backgroundContainer{
-    position: absolute;
     width: 100%;
+    position: absolute;
+    z-index: -1;
+    min-height: inherit;
 }
 
 .cardAM > .cardContent{
@@ -90,9 +93,9 @@
 
 
 .backgroundContainer > img{
-    position: absolute;
     object-position: center;
     object-fit: cover;
     z-index: -1;
-    width: 100%;
+    min-height: inherit;
+width: 100%;
 }
