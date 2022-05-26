@@ -1,7 +1,6 @@
 # Sunnyside Agency
-<!--
+
 # ![preview](./src/assets/screenshot.png)
--->
 
 A challenge made for Frontend Mentor.
 
